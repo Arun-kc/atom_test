@@ -1,11 +1,13 @@
 function Search() {
   return (
-        <div className="flex justify-between py-3 px-6 bg-gray-50 border-b">
-            <form action="">
-                <input type="text" name="search" placeholder="searchhh" autoComplete="off"
-                className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"></input>
-            </form>
+    <div className="">
+    <div className="container flex justify-center items-center px-4 sm:px-6 lg:px-8">
+        <div className="relative"> <input type="text" className="h-14 w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none" placeholder="Paste your tweet link.." />
+            <div className="absolute top-4 right-3"> <i className="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i> </div>
         </div>
+    </div>
+</div>
+
   )
 }
 
