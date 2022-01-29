@@ -5,11 +5,14 @@ import Tweet from './Tweet';
 import { getTweets } from '../libs/twitter';
 
 function Page({selectedLink}) {
-    console.log(selectedLink);
+    //console.log(selectedLink);
     // const tweet = await getTweets(['1414491290486534147']);
-    const tweet = async () =>{
-        getTweets(['1414491290486534147']);
-    }
+    console.log('hiiiii');
+    var tweet = getTweets('1414491290486534147');
+    console.log(tweet);
+    // const tweet = async () =>{
+    //     getTweets('1414491290486534147');
+    // }
     //console.log(tweet.id);
     
     return (
@@ -25,7 +28,7 @@ function Page({selectedLink}) {
                     </div>
                 </div>
             </div>
-            {/* <Tweet key={tweet.id} {...tweet} /> */}
+            {/* <Tweet key={tweet} /> */}
         </div>
         </div>
     )
